@@ -1,0 +1,172 @@
+/* Note that the display property for HTML5 elements is already accounted for in normalize.min.css, so that rule is omitted here. */
+@font-face {
+    font-family: 'Franklin Gothic';
+    src: url('../font/franklin-gothic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Victory Comics Condensed';
+    src: url('../font/victory-comics-condensed.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Victory Comics Semi';
+    src: url('../font/victory-comics-semi.ttf') format('truetype');
+}
+
+html {
+    background-color: #fcf7fe;
+    box-sizing: border-box;
+    color: #1a1919;
+    font-family: 'Franklin Gothic', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    border: 0;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background: url('../img/metal-pattern1.jpg') center/cover;
+    font: 2.7rem 'Victory Comics Condensed', sans-serif;
+    margin: 1.5rem 0;
+    padding: 2rem 0;
+}
+
+h2 {
+    font: 1.9rem 'Victory Comics Semi', sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+a,
+a:link,
+a:visited {
+    color: #b74900;
+}
+
+a:focus,
+a:hover {
+    color: #116d8c;
+    outline: none;
+    transition: 0.25s;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+button {
+    background:
+        linear-gradient(135deg, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 50%) top/0.75rem 0.75rem repeat-x,
+        linear-gradient(-135deg, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 50%) top/0.75rem 0.75rem repeat-x,
+        linear-gradient(45deg, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 50%) bottom/0.75rem 0.75rem repeat-x,
+        linear-gradient(-45deg, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 50%) bottom/0.75rem 0.75rem repeat-x,
+        linear-gradient(90deg, rgba(26,25,25,1) 6%, rgba(26,25,25,0) 6%, rgba(26,25,25,0) 94.5%, rgba(26,25,25,1) 94.5%) center/cover #ff6904;
+    color: #1a1919;
+    display: block;
+    font: 1.7rem 'Victory Comics Semi', sans-serif;
+    margin: 1.5rem auto;
+    padding: 2.1rem 3.05rem;
+}
+
+button:focus,
+button:hover {
+    background:
+        linear-gradient(135deg, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 50%) top/0.75rem 0.75rem repeat-x,
+        linear-gradient(-135deg, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 50%) top/0.75rem 0.75rem repeat-x,
+        linear-gradient(45deg, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 50%) bottom/0.75rem 0.75rem repeat-x,
+        linear-gradient(-45deg, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 50%) bottom/0.75rem 0.75rem repeat-x,
+        linear-gradient(90deg, rgba(26,25,25,1) 6%, rgba(26,25,25,0) 6%, rgba(26,25,25,0) 94.5%, rgba(26,25,25,1) 94.5%) center/cover #98dbf1;
+    outline: none;
+    transition: 0.25s;
+}
+
+button:active {
+    background:
+        linear-gradient(135deg, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 50%) top/0.75rem 0.75rem repeat-x,
+        linear-gradient(-135deg, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 50%) top/0.75rem 0.75rem repeat-x,
+        linear-gradient(45deg, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 50%) bottom/0.75rem 0.75rem repeat-x,
+        linear-gradient(-45deg, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 50%) bottom/0.75rem 0.75rem repeat-x,
+        linear-gradient(90deg, rgba(255,105,4,1) 6%, rgba(255,105,4,0) 6%, rgba(255,105,4,0) 94.5%, rgba(255,105,4,1) 94.5%) center/cover #98dbf1;
+}
+
+img {
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+header {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 2560px;
+}
+
+#logo {
+    padding: 1.5rem 1.5rem 0;
+    max-width: 400px;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 0 4%;
+}
+
+p {
+    line-height: 1.4rem;
+    letter-spacing: 0.01rem;
+}
+
+p + p {
+    margin-top: 0.5rem;
+}
+
+footer {
+    background: url('../img/tiger-pattern3.jpg') center/cover;
+    clear: both;
+    color: #fcf7fe;
+    margin: 0 auto;
+    max-width: 2560px;
+    padding: 1.5rem 0 1.4rem;
+    text-align: center;
+    text-shadow: 0.05em 0 30px #010101, 0 0.05em 30px #010101, 0 -0.05em 30px #010101, -0.05em -0.05em 30px #010101, -0.05em 0.05em 30px #010101, 0.05em -0.05em 30px #010101;
+}
+
+/* Media Queries */
+
+/* First Breakpoint: 950+ px */
+@media (min-width: 950px) {
+
+    section {
+        float: left;
+        padding: 0 2rem;
+        width: 50%;
+    }
+
+    section + section {
+        float: right;
+    }
+
+    main {
+        padding: 0;
+    }
+
+}
+
+/* Second Breakpoint: 1280+ px */
+
+@media (min-width: 1280px) {
+
+    html {
+        font-size: 1.25em;
+    }
+
+    button {
+        padding: 2rem 2.6rem;
+    }
+
+}
