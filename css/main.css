@@ -31,10 +31,12 @@ html {
 }
 
 h1 {
-    background: url('../img/metal-pattern1.jpg') center/cover;
-    font: 2.6rem 'Victory Comics Condensed', sans-serif;
-    margin-bottom: 1rem;
-    padding: 2rem 0;
+    background: url('../img/jungle.jpg') center/cover;
+    color: #ff6904;
+    font: 3rem 'Victory Comics Condensed', sans-serif;
+    margin: 0 0 1rem;
+    padding: 5rem 1rem;
+    text-shadow: 0.05em 0 30px #191e0e, 0 0.05em 30px #191e0e, 0 -0.05em 30px #191e0e, -0.05em -0.05em 30px #191e0e, -0.05em 0.05em 30px #191e0e, 0.05em -0.05em 30px #191e0e;
 }
 
 h2 {
@@ -146,16 +148,15 @@ nav {
 }
 
 .hamburger {
-    width: 35px;
-    height: 5px;
-    background-color: #1a1919;
+    width: 2.2rem;
+    border-bottom: 0.25rem solid #1a1919;
     margin: 6px 0;
 }
 
 .cookcodesmenu_btn {
     display: inline-block;
     position: relative;
-    top: -1.1rem;
+    top: -1.2rem;
 }
 
 .sticky {
