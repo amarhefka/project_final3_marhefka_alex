@@ -105,7 +105,7 @@ header {
     max-width: 2560px;
 }
 
-nav {
+header ul {
     display: none;
 }
 

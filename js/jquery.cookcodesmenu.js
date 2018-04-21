@@ -19,8 +19,8 @@
             easingClose: 'swing',
             closedSymbol: "&#10133;", //Supports HTML
             openedSymbol: "&#10134;", //Supports HTML
-            prependTo: 'body',
-            appendTo: '',
+            prependTo: '',
+            appendTo: 'nav',
             parentTag: 'a',
             closeOnClick: true,
             allowParentLinks: true,
