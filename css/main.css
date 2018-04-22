@@ -40,7 +40,7 @@ h1 {
 }
 
 h2 {
-    font: 1.9rem 'Victory Comics Semi', sans-serif;
+    font: 2rem 'Victory Comics Semi', sans-serif;
     margin-bottom: 0.5rem;
 }
 
@@ -101,17 +101,17 @@ img {
 }
 
 header {
-    background: url('../img/gym-interior3.jpg') center/cover;
+    background: url('../img/gym-interior3.jpg') right/cover;
     text-align: center;
     margin: 0 auto;
     max-width: 1400px;
-    padding-bottom: 12rem;
+    padding-bottom: 22rem;
 }
 
 header section {
     background-color: rgba(252, 247, 254, 0.8);
     box-shadow: 0 0 5px 6px rgba(252, 247, 254, 0.8);
-    margin: 12rem auto 0;
+    margin: 22rem auto 0;
     max-width: 520px;
     padding: 1.2rem;
     width: 80%;
@@ -123,6 +123,12 @@ header section a {
 
 header ul {
     display: none;
+    list-style-type: none;
+}
+
+#logo {
+    display: none;
+    max-width: 140px;
 }
 
 main {
@@ -131,7 +137,7 @@ main {
 }
 
 section {
-    padding: 0 2rem;
+    padding: 1.5rem 2rem 2rem;
 }
 
 p {
@@ -221,8 +227,23 @@ nav {
 /* First Breakpoint: 800+ px */
 @media (min-width: 800px) {
 
-    header ul {
-        display: block;
+    header ul,
+    #logo,
+    nav a {
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    #logo {
+        padding: 0.75rem 0.5rem 0.75rem 0;
+    }
+
+    nav ul li {
+        display: inline-block;
+        font-size: 1.5rem;
+        padding-left: 2.75rem;
+        position: relative;
+        top: -1.75rem;
     }
 }
 

@@ -11,7 +11,7 @@
         // default settings object.
         defaults = {
             display: 782, // From where mobile menu apears and desktop  menu gone
-            brand: '<a href="#"><img src="img/logo.png" alt="Bestial Fitness logo" id="logo"></a>', // Supports HTML
+            brand: '<a href="#"><img src="img/logo.png" alt="Bestial Fitness logo"></a>', // Supports HTML
             label: '<div class="hamburger"></div><div class="hamburger"></div><div class="hamburger"></div>', // Menu Label: // Supports HTML
             duplicate: true,
             duration: 200,
