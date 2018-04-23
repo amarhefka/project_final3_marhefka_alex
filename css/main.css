@@ -41,7 +41,7 @@ h1 {
 
 h2 {
     font: 2rem 'Victory Comics Semi', sans-serif;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
 }
 
 a,
@@ -101,7 +101,7 @@ img {
 }
 
 header {
-    background: url('../img/gym-interior3.jpg') right/cover;
+    background: url('../img/gym-interior3.jpg') left/cover;
     box-shadow: inset 0 -6px 14px -6px rgba(26, 25, 25, 0.7);
     text-align: center;
     margin: 0 auto;
@@ -113,7 +113,7 @@ header section {
     background-color: rgba(252, 247, 254, 0.8);
     box-shadow: 0 0 5px 6px rgba(252, 247, 254, 0.8);
     margin: 22rem auto 0;
-    max-width: 520px;
+    max-width: 640px;
     padding: 1.2rem;
     width: 80%;
 }
@@ -138,12 +138,18 @@ main {
 }
 
 section {
-    padding: 1.5rem 2rem 2rem;
+    padding: 1.5rem 2rem 2.2rem;
 }
 
 main section {
     background-color: #fcf7fe;
     box-shadow: inset 0 -6px 14px -6px rgba(26, 25, 25, 0.7);
+}
+
+main section * {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
 }
 
 p {
@@ -152,7 +158,7 @@ p {
 }
 
 p + p {
-    margin-top: 0.5rem;
+    margin-top: 0.8rem;
 }
 
 footer {
@@ -212,8 +218,8 @@ nav {
 .sticky {
     box-shadow: 0 0 5px 6px #fcf7fe, 0 3px 4px 2px #1a1919;
     position: fixed;
+    max-width: 1400px;
     width: 100%;
-    left: 0;
     top: 0;
     z-index: 100;
 }
@@ -234,11 +240,24 @@ nav {
 /* First Breakpoint: 800+ px */
 @media (min-width: 800px) {
 
+    html {
+        font-size: 110%;
+    }
+
     header ul,
     #logo,
     nav a {
         display: inline-block;
         text-decoration: none;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        letter-spacing: 0.05rem;
+    }
+
+    h2 {
+        font-size: 2.2rem;
     }
 
     #logo {
@@ -247,15 +266,27 @@ nav {
 
     nav ul li {
         display: inline-block;
-        font-size: 1.5rem;
+        font-size: 1.15rem;
+        font-weight: bold;
+        letter-spacing: 0.05rem;
         padding-left: 2.75rem;
         position: relative;
-        top: -1.75rem;
+        top: -1.8rem;
     }
+
+    p {
+        font-size: 1.1rem;
+    }
+
 }
 
-/* Second Breakpoint: 1280+ px */
+/* Second Breakpoint: 960+ px */
 
-@media (min-width: 1280px) {
+@media (min-width: 960px) {
+
+    nav ul li {
+        font-size: 1.35rem;
+        padding-left: 4rem;
+    }
 
 }
