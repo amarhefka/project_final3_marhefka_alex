@@ -238,6 +238,13 @@ nav {
     z-index: 100;
 }
 
+a.current,
+.cookcodesmenu_nav li a.current {
+    background-color: #fcf7fe;
+    color: #1a1919;
+    font-weight: bold;
+}
+
 .hidden {
     border: 0;
     clip: rect(0 0 0 0);
