@@ -1,14 +1,16 @@
 $(document).ready(function () {
+    // This activates the cookcodesmenu jQuery plugin, creating the collapsible menu for small screen sizes.
     $(function () {
         $('#menu').cookcodesmenu();
     });
 
+    // This activates the backstretch jQuery plugin, adding a resizeable tiger stripe pattern for the background (only visible on large screen sizes).
+    $.backstretch('img/tiger-pattern2.jpg');
+
+    // This code makes the navigation menu sticky when the user scrolls past it.
     var stickyNavTop = $('nav').offset().top;
-    // our function that decides weather the navigation bar should have "fixed" css position or not.
     var stickyNav = function () {
-        var scrollTop = $(window).scrollTop(); // our current vertical position from the top
-        // if we've scrolled more than the navigation, change its position to fixed to stick to top,
-        // otherwise change it back to relative
+        var scrollTop = $(window).scrollTop();
         if (scrollTop > stickyNavTop) {
             $('nav').addClass('sticky');
         } else {
@@ -16,14 +18,11 @@ $(document).ready(function () {
         }
     };
     stickyNav();
-    // and run it again every time you scroll
     $(window).scroll(function () {
         stickyNav();
     });
 
-    $.backstretch('img/tiger-pattern2.jpg');
-
-    // this is plain custom JavaScript to add the days of the week (and align them with the 'day' CSS class) before every other <time> element on the About page
+    // This is plain custom JavaScript to add the days of the week (and align them with the 'day' CSS class) before every other <time> element on the About page.
     var hours = document.getElementsByTagName('time');
     var days = ['MON: ', 'TUE: ', 'WED: ', 'THU: ', 'FRI: ', 'SAT: ', 'SUN: '];
     var dayIndex = 0;
