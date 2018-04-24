@@ -248,6 +248,14 @@ a.current,
     font-weight: bold;
 }
 
+.day {
+    display: inline-block;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 1rem;
+    width: 2.75rem;
+}
+
 .hidden {
     border: 0;
     clip: rect(0 0 0 0);
