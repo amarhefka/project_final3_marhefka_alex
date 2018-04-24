@@ -246,7 +246,7 @@ button {
     color: #1a1919;
     font: 1.4rem 'Victory Comics Semi', sans-serif;
     margin-left: 1.5rem;
-    max-width: 245px;
+    max-width: 290px;
     padding: 2rem 2.5rem 2rem 2.2rem;
     vertical-align: middle;
     width: 60%;
@@ -328,7 +328,7 @@ button:active {
     }
 
     button {
-        margin-left: 3.5rem;
+        margin-left: 4.5rem;
     }
 
 }
