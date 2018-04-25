@@ -273,6 +273,10 @@ button:active {
         linear-gradient(90deg, rgba(255,105,4,1) 6%, rgba(255,105,4,0) 6%, rgba(255,105,4,0) 94.5%, rgba(255,105,4,1) 94.5%) center/cover #98dbf1;
 }
 
+figure {
+    max-width: 300px;
+}
+
 .hidden {
     border: 0;
     clip: rect(0 0 0 0);
