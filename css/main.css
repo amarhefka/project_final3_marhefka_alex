@@ -274,7 +274,13 @@ button:active {
 }
 
 figure {
+    font-size: 1.05rem;
+    margin: auto;
     max-width: 300px;
+}
+
+#smoothies section {
+    text-align: center;
 }
 
 .hidden {
@@ -333,6 +339,12 @@ figure {
 
     button {
         margin-left: 4.5rem;
+    }
+
+    #smoothies section {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
     }
 
 }
