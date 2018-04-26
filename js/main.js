@@ -22,7 +22,7 @@ $(document).ready(function () {
         stickyNav();
     });
 
-    // This is plain custom JavaScript to add the days of the week (and align them with the 'day' CSS class) before every other <time> element on the About page.
+    // This is custom JavaScript to add the days of the week (and align them with the 'day' CSS class) before every other <time> element on the About page.
     var hours = document.getElementsByTagName('time');
     var days = ['MON: ', 'TUE: ', 'WED: ', 'THU: ', 'FRI: ', 'SAT: ', 'SUN: '];
     var dayIndex = 0;
@@ -36,4 +36,10 @@ $(document).ready(function () {
             dayIndex += 1;
         }
     }
+
+    // This is custom jQuery to listen for a click on any image, then play a tiger roaring sound.
+    var audio = new Audio('tiger.mp3');
+    $('img').on('click', function () {
+        audio.play();
+    });
 });
