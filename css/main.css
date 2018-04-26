@@ -304,7 +304,8 @@ figure {
     max-width: 300px;
 }
 
-#smoothies section {
+#smoothies section,
+#registration section {
     text-align: center;
 }
 

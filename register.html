@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Register | Beastial Fitness</title>
+    <meta name="description" content="Bestial Fitness is a no-nonsense health club that caters to relentless athletes, savage powerlifters, and literal tigers.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/vendor/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <h1>Take the Plunge</h1>
+        <nav>
+            <h2 class="hidden">Navigation</h2>
+            <a href="index.html"><img src="img/logo.png" alt="Bestial Fitness logo" id="logo"></a>
+            <ul id="menu">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="smoothies.html">Smoothies</a></li>
+                <li><a href="#" class="current">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="registration">
+        <section>
+            <h2>Register Now</h2>
+            <form id="register" name="register" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <p>What do you want to sign up for?</p>
+                <select>
+                    <option value="one-year">One-Year Gym Membership ($400)</option>
+                    <option value="one-month">One-Month Gym Membership ($40)</option>
+                    <option value="steel-mace">Steel Mace Training ($220)</option>
+                    <option value="front-squats">Front Squats 101 ($180)</option>
+                    <option value="deadlifts">Deadlift Derby ($180)</option>
+                    <option value="body-weight">Body-weight Medley ($120)</option>
+                    <option value="pilates">Hardcore Pilates ($60)</option>
+                </select>
+                <input type="submit" id="submit" value="— Submit —">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2018 Beastial Fitness, Inc.</p>
+    </footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.cookcodesmenu.js"></script>
+    <script src="js/jquery.backstretch.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
