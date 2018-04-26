@@ -309,6 +309,10 @@ figure {
     text-align: center;
 }
 
+.orange {
+    color: #b74900;
+}
+
 .hidden {
     border: 0;
     clip: rect(0 0 0 0);
@@ -339,7 +343,7 @@ form p {
 input[type="text"],
 input[type="email"],
 select {
-    background-color: #fcfffb;
+    background-color: #fcf7fe;
     color: #1a1919;
     display: block;
     font-family: 'Franklin Gothic', sans-serif;
