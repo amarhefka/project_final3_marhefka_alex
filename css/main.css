@@ -320,6 +320,94 @@ figure {
     width: 1px;
 }
 
+form {
+    background-color: #1a1919;
+    color: #fcf7fe;
+    border-radius: 2rem;
+    margin: auto;
+    max-width: 900px;
+    padding: 1rem 2rem 2rem;
+}
+
+label,
+form p {
+    display: block;
+    font-size: 1.2rem;
+    padding: 1.5rem 0 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    background-color: #fcfffb;
+    color: #1a1919;
+    display: block;
+    font-family: 'Franklin Gothic', sans-serif;
+    margin: auto;
+    max-width: 500px;
+    padding: 0.5rem;
+    width: 95%;
+}
+
+input[type="submit"] {
+    animation: heartbeat 1.75s ease-in-out infinite both;
+    -moz-animation: heartbeat 1.75s ease-in-out infinite both;
+    -webkit-animation: heartbeat 1.75s ease-in-out infinite both;
+    background-color: #ff6904;
+    color: #1a1919;
+    border-radius: 1.5rem;
+    display: block;
+    font: 1.4rem 'Victory Comics Semi', sans-serif;
+    margin: 2.4rem auto 0.5rem;
+    padding: 0.75rem 2rem;
+}
+
+input:focus,
+input:hover,
+select:focus,
+select:hover {
+    outline: #ff6904 outset 0.25rem;
+}
+
+input[type="submit"]:focus,
+input[type="submit"]:hover {
+    background-color: #98dbf1;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Keyframes */
+
+@keyframes heartbeat {
+
+    0% {
+        transform: scale(1);
+        transform-origin: center center;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        transform: scale(1.1);
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        transform: scale(1.02);
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        transform: scale(1.09);
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+    }
+}
+
 /* Media Queries */
 
 /* First Breakpoint: 800+ px */
