@@ -64,7 +64,7 @@ a:active {
 nav > a:focus,
 .cookcodesmenu_brand > a:focus,
 .cookcodesmenu_menu > a:focus {
-    outline: 0.3rem outset #ff6904;
+    outline: 0.3rem outset #b74900;
 }
 
 .cookcodesmenu_nav li a:focus,
@@ -218,6 +218,31 @@ a.current,
     background-color: #fcf7fe;
     color: #1a1919;
     font-weight: bold;
+}
+
+#social {
+    list-style-type: none;
+    margin: 1rem auto 0;
+    max-width: 900px;
+}
+
+#social li {
+    display: inline;
+}
+
+#social li + li {
+    margin-left: 1rem;
+}
+
+#social li a img {
+    display: inline-block;
+    margin-bottom: 0;
+    max-width: 35px;
+}
+
+#social li a:focus,
+#social li a:hover {
+    outline: 0.3rem outset #1a1919;
 }
 
 .day {
